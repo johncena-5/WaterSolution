@@ -7,7 +7,8 @@ public class TestScriptTest {
 
 	@Test
 	public void demo() {
-		System.out.println("executed Test");
+		
+		System.out.println("integression testing");
 	}
 	
 	@Test
