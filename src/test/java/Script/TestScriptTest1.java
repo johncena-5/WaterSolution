@@ -17,9 +17,15 @@ public class TestScriptTest1 {
 	
 	
 		
-		@Test
+		@Test(groups = "smoke")
 		public void login() {
 
 			System.out.println("hi hello");
+		}
+		
+		@Test(groups = "regression")
+		public void password() {
+
+			System.out.println("bye bye");
 		}
 }
