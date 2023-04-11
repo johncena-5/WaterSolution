@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Suite">
-<groups>
-<run>
-<include name="smoke"></include>
-</run>
-</groups>
   <test thread-count="1" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
+      <class name="Script.DatabaseTest"></class>
+      <class name="Script.Str"/>
       <class name="Script.TestScriptTest1"/>
+      <class name="Script.TestScriptTest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
